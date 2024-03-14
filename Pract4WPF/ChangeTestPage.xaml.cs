@@ -20,10 +20,35 @@ namespace Pract4WPF
     /// </summary>
     public partial class ChangeTestPage : Page
     {
-        public List<TestClass> Tests = new List<TestClass>();
+        private List<TestClass> Tests = SerDeser.Deserialization<TestClass>();
         public ChangeTestPage()
         {
             InitializeComponent();
+            change_test_datagrid.ItemsSource = Tests;
+        }
+        
+        private void Add_string_to_table_button_OnClick(object sender, RoutedEventArgs e)
+        {
+            TestClass new_test_class = new TestClass("", "", "", "", "", AnswerEnum.First);
+            Tests.Add(new_test_class);
+            change_test_datagrid.ItemsSource = null;
+            change_test_datagrid.ItemsSource = Tests;
+        }
+
+        private void Delete_string_to_table_button_OnClick(object sender, RoutedEventArgs e)
+        {
+            if (Tests.Count != 0)
+            {
+                Tests.RemoveAt(Tests.Count-1);
+                change_test_datagrid.ItemsSource = null;
+                change_test_datagrid.ItemsSource = Tests;
+            }
+        }
+
+        private void Save_strings_to_table_button_OnClick(object sender, RoutedEventArgs e)
+        {
+            SerDeser.Serialization(Tests);
+            change_test_datagrid.ItemsSource = null;
             change_test_datagrid.ItemsSource = Tests;
         }
     }

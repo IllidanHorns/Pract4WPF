@@ -9,6 +9,15 @@
       Title="NonTestPage">
 
     <Grid>
-        <TextBlock x:Name="user_cuel_textblock" Text="Кажется вы неправильно ввели пароль..." HorizontalAlignment="Center" VerticalAlignment="Center" Width="500" Height="50" TextAlignment="Center" FontSize="20" FontFamily="TimesNewRoman" FontStyle="Italic"/>
+        <TextBlock
+            Foreground="FloralWhite"
+            x:Name="user_cuel_textblock" Text="Пока вы ничего не выбрали..." 
+            HorizontalAlignment="Center" VerticalAlignment="Center" 
+            Width="500" 
+            Height="50" 
+            TextAlignment="Center" 
+            FontSize="20" 
+            FontFamily="TimesNewRoman" 
+            FontStyle="Italic"/>
     </Grid>
 </Page>

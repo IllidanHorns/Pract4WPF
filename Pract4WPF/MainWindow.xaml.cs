@@ -7,7 +7,6 @@ namespace Pract4WPF
     /// </summary>
     public partial class MainWindow : Window
     {
-        TestWindow test_window = new TestWindow();
 
         public string password_admin = "123";
         public MainWindow()
@@ -17,10 +16,13 @@ namespace Pract4WPF
 
         private void change_test_Click(object sender, RoutedEventArgs e)
         {
+            TestWindow test_window = new TestWindow();
+            test_window.Owner = this;
+            this.Visibility = Visibility.Collapsed;
             if (admin_key_textbox.Text == "123")
             {
                 test_window.change_test_button.IsEnabled = true;
-                test_window.test_frame.Content = new ChangeTestPage();
+                test_window.test_frame.Content = new NonTestPage();
                 test_window.Show();
             }
             else
@@ -28,13 +30,17 @@ namespace Pract4WPF
                 test_window.change_test_button.IsEnabled = false;
                 test_window.test_frame.Content = new NonTestPage();
                 test_window.Show();
-                this.Visibility = Visibility.Collapsed;
             }
         }
 
-        private void start_test_Click(object sender, RoutedEventArgs e)
+        private void start_test_Click(object sender, RoutedEventArgs e) 
         {
-
+            TestWindow test_window = new TestWindow();
+            test_window.change_test_button.IsEnabled = false;
+            test_window.test_frame.Content = new NonTestPage();
+            test_window.Owner = this;
+            this.Visibility = Visibility.Collapsed;
+            test_window.Show();
         }
     }
 }

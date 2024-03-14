@@ -14,7 +14,21 @@ namespace Pract4WPF
 
         private void exit_button_Click(object sender, RoutedEventArgs e)
         {
+            this.Owner.Visibility = Visibility.Visible;
             this.Close();
+        }
+
+        private void Change_test_button_OnClick(object sender, RoutedEventArgs e)
+        {
+            this.test_frame.Content = new ChangeTestPage();
+        }
+
+        private void Start_test_button_OnClick(object sender, RoutedEventArgs e)
+        {
+            if (SerDeser.Deserialization<TestClass>().Count != 0)
+            {
+                this.test_frame.Content = new StartTestPage();
+            }
         }
     }
 }

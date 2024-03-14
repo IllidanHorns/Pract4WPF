@@ -28,3 +28,9 @@ C:\Users\illid\source\repos\Pract4WPF\Pract4WPF\obj\Debug\net8.0-windows\ChangeT
 C:\Users\illid\source\repos\Pract4WPF\Pract4WPF\bin\Debug\net8.0-windows\Newtonsoft.Json.dll
 C:\Users\illid\source\repos\Pract4WPF\Pract4WPF\obj\Debug\net8.0-windows\Pract4WPF.csproj.AssemblyReference.cache
 C:\Users\illid\source\repos\Pract4WPF\Pract4WPF\obj\Debug\net8.0-windows\Pract4WPF.csproj.CopyComplete
+C:\Users\illid\source\repos\Pract4WPF\Pract4WPF\obj\Debug\net8.0-windows\StartTestPage.g.cs
+C:\Users\illid\source\repos\Pract4WPF\Pract4WPF\obj\Debug\net8.0-windows\StartTestPage.baml
+C:\Users\illid\source\repos\Pract4WPF\Pract4WPF\bin\Debug\net8.0-windows\MaterialDesignColors.dll
+C:\Users\illid\source\repos\Pract4WPF\Pract4WPF\bin\Debug\net8.0-windows\MaterialDesignThemes.Wpf.dll
+C:\Users\illid\source\repos\Pract4WPF\Pract4WPF\bin\Debug\net8.0-windows\Microsoft.Xaml.Behaviors.dll
+C:\Users\illid\source\repos\Pract4WPF\Pract4WPF\obj\Debug\net8.0-windows\App.baml

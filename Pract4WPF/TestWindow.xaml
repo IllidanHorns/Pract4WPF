@@ -6,7 +6,7 @@
         xmlns:local="clr-namespace:Pract4WPF"
         mc:Ignorable="d"
         Title="TestWindow" Height="450" Width="800">
-    <Grid>
+    <Grid Background="Moccasin">
         
         <Grid.ColumnDefinitions>
             <ColumnDefinition Width="1*"/>
@@ -18,9 +18,44 @@
             <RowDefinition Height="10*"/>
         </Grid.RowDefinitions>
 
-        <Button x:Name="exit_button" Grid.Column="0" Grid.Row="0" VerticalAlignment="Center" HorizontalAlignment="Center" Content="Выйти" Width="60" Height="34" Click="exit_button_Click"/>
-        <Button x:Name="change_test_button" Grid.Column="1" Grid.Row="0" VerticalAlignment="Center" HorizontalAlignment="Center" Content="Редактировать тест" Width="350" Height="34"/>
-        <Button x:Name="start_test_button" Grid.Column="2" Grid.Row="0" VerticalAlignment="Center" HorizontalAlignment="Center" Content="Пройти тест" Width="350" Height="34"/>
-        <Frame x:Name="test_frame" Grid.ColumnSpan="3" Grid.Row="1"/>
+        <Button
+            Foreground="FloralWhite"
+            x:Name="exit_button" 
+            Grid.Column="0" 
+            Grid.Row="0" 
+            VerticalAlignment="Center" 
+            HorizontalAlignment="Center" 
+            Content="Выйти" 
+            Width="80" 
+            Height="34" 
+            Click="exit_button_Click"/>
+        <Button
+            Foreground="FloralWhite"
+            x:Name="change_test_button" 
+            Grid.Column="1" 
+            Grid.Row="0" 
+            VerticalAlignment="Center" 
+            HorizontalAlignment="Center" 
+            Content="Редактировать тест" 
+            Width="345" 
+            Height="34"
+            Click="Change_test_button_OnClick"
+            />
+        <Button
+            Foreground="FloralWhite"
+            x:Name="start_test_button" 
+            Grid.Column="2" 
+            Grid.Row="0" VerticalAlignment="Center" 
+            HorizontalAlignment="Center" 
+            Content="Пройти тест" 
+            Width="345" 
+            Height="34"
+            Click="Start_test_button_OnClick"/>
+        <Frame
+            x:Name="test_frame" 
+            Grid.ColumnSpan="3" 
+            Grid.Row="1"
+            NavigationUIVisibility="Hidden"
+            />
     </Grid>
 </Window>

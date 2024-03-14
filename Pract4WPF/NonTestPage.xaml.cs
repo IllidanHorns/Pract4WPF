@@ -23,6 +23,10 @@ namespace Pract4WPF
         public NonTestPage()
         {
             InitializeComponent();
+            if (SerDeser.Deserialization<TestClass>().Count == 0)
+            {
+                user_cuel_textblock.Text = "В тесте нет ни одного элемента";
+            }
         }
     }
 }

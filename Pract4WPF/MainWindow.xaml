@@ -6,16 +6,46 @@
         xmlns:local="clr-namespace:Pract4WPF"
         mc:Ignorable="d"
         Title="MainWindow" Height="450" Width="300">
-    <Grid>
+    <Grid Background="Bisque">
         <Grid.RowDefinitions>
             <RowDefinition Height="0.8*"/>
             <RowDefinition Height="2*"/>
             <RowDefinition Height="2*"/>
             <RowDefinition Height="0.8*"/>
         </Grid.RowDefinitions>
-        <TextBlock x:Name="start_message_textbox" VerticalAlignment="Center" HorizontalAlignment="Center" Text="Добро пожаловать в редактор теста. Выберите один из пунктов ниже." TextAlignment="Center" TextWrapping="Wrap" Grid.Row="0"/>
-        <Button x:Name="change_test_button" Grid.Row="1" HorizontalAlignment="Center" VerticalAlignment="Center" Content="Редактировать тест" Width="280" Height="75" Click="change_test_Click"/>
-        <Button x:Name="start_test_button" Grid.Row="2" HorizontalAlignment="Center" VerticalAlignment="Center" Content="Пройти тест" Width="280" Height="75" Click="start_test_Click"/>
-        <TextBox x:Name="admin_key_textbox" Grid.Row="3" HorizontalAlignment="Center" VerticalAlignment="Center" Text="Введите пароль" Width="280" Height="40" TextWrapping="Wrap" TextAlignment="Center"/>
+        <TextBlock
+            Foreground="RosyBrown"
+            x:Name="start_message_textbox"
+            FontStyle="Italic"
+            HorizontalAlignment="Center" 
+            Text="Добро пожаловать в редактор теста. Выберите один из пунктов ниже." 
+            TextAlignment="Center" TextWrapping="Wrap" 
+            Grid.Row="0"/>
+        <Button x:Name="change_test_button" 
+                Grid.Row="1" 
+                HorizontalAlignment="Center" 
+                VerticalAlignment="Center" 
+                Content="Редактировать тест" 
+                Width="280" Height="75" 
+                Click="change_test_Click"/>
+        <Button 
+            x:Name="start_test_button" 
+            Grid.Row="2" 
+            HorizontalAlignment="Center" 
+            VerticalAlignment="Center" 
+            Content="Пройти тест" 
+            Width="280" 
+            Height="75" 
+            Click="start_test_Click"/>
+        <TextBox
+            Foreground="RosyBrown"
+            x:Name="admin_key_textbox" 
+            Grid.Row="3" 
+            HorizontalAlignment="Center" 
+            VerticalAlignment="Center" 
+            Text="Введите пароль" 
+            Width="280" 
+            Height="40" 
+            TextWrapping="Wrap" TextAlignment="Center"/>
     </Grid>
 </Window>

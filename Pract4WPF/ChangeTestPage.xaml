@@ -10,11 +10,42 @@
 
     <Grid>
         <Grid.RowDefinitions>
-            <RowDefinition/>
+            <RowDefinition Height="15*"/>
+            <RowDefinition Height="1*"/>
         </Grid.RowDefinitions>
         <Grid.ColumnDefinitions>
             <ColumnDefinition/>
+            <ColumnDefinition/>
+            <ColumnDefinition/>
         </Grid.ColumnDefinitions>
-        <DataGrid x:Name="change_test_datagrid" Grid.Row="0" Grid.Column="0" SelectionChanged="change_test_datagrid_SelectionChanged" VerticalAlignment="Top" HorizontalAlignment="Center" Width="700"/>
+        <DataGrid 
+            Background="Bisque"
+            x:Name="change_test_datagrid" 
+            Grid.Row="0" 
+            Grid.ColumnSpan="3" 
+            VerticalAlignment="Top" 
+            HorizontalAlignment="Center"
+            Width="800"/>
+        <Button
+            x:Name="add_string_to_table_button"
+            Grid.Column="0"
+            Grid.Row="1"
+            Content="Добавить строку"
+            Click="Add_string_to_table_button_OnClick"
+            />
+        <Button
+            x:Name="delete_string_to_table_button"
+            Grid.Column="1"
+            Grid.Row="1"
+            Content="Удалить строку"
+            Click="Delete_string_to_table_button_OnClick"
+            />
+        <Button
+            x:Name="save_strings_to_table_button"
+            Grid.Column="2"
+            Grid.Row="1"
+            Content="Сохранить изменения"
+            Click="Save_strings_to_table_button_OnClick"
+            />
     </Grid>
 </Page>
